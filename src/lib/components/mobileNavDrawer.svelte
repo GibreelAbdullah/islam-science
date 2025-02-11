@@ -3,7 +3,8 @@
 	import NavTopics from '$lib/data/navTopics.svelte';
 	import { Modal } from '@skeletonlabs/skeleton-svelte';
 	import LightSwitch from './lightSwitch.svelte';
-
+	import { base } from "$app/paths";
+	import { title } from "$lib/data/constants";
 	let drawerState = $state(false);
 
 	function drawerClose() {
@@ -24,9 +25,9 @@
 	{#snippet trigger()}{@html icons.menu}{/snippet}
 	{#snippet content()}
 		<header class="flex items-center justify-between">
-			<a class="flex gap-4" href="/" title="Islam-Science" aria-label="Islam-Science">
+			<a class="flex gap-4" href="{base}/" title="Islam-Science" aria-label="Islam-Science">
 				{@html icons.logo}
-				<h2 class="h3">Islam Science</h2>
+				<!-- <h2 class="h3">{title}</h2> -->
 			</a>
 			<button
 				class="btn-icon mr-3"
