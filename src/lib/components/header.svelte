@@ -1,12 +1,14 @@
 <script lang="ts">
-	import MobileNavDrawer from './mobileNavDrawer.svelte';
+	import Sidebar from './sidebar.svelte';
 	import { icons } from '$lib/data/icons';
-	import NavTopics from '$lib/data/navTopics.svelte';
+	import getData from '$lib/service/utils';
 	import LightSwitch from './lightSwitch.svelte';
-	import { base } from "$app/paths";
-	import { title } from "$lib/data/constants";
+	import { base } from '$app/paths';
+	import { ROOT_PATH } from '$lib/data/constants';
 
+	let topics: Promise<any> = getData(ROOT_PATH);
 </script>
+
 <header
 	class="sticky top-0 z-50 border-b-[1px] border-surface-500/20 bg-surface-50/90 dark:bg-surface-950/90 backdrop-blur w-full h-[70px] flex items-center"
 >
@@ -17,15 +19,33 @@
 		<div class="flex items-center gap-10">
 			<!-- Mobile Nav Drawer -->
 			<div class="xl:hidden btn-icon">
-				<MobileNavDrawer />
+				<Sidebar />
 			</div>
 
-			<a class="m-auto flex justify-center" href="{base}/" title="Islam-Science" aria-label="Islam-Science" style="left: 50%; transform: translateX(-50%);">
+			<a
+				class="m-auto flex justify-center"
+				href="{base}/"
+				title="Islam-Science"
+				aria-label="Islam-Science"
+				style="left: 50%; transform: translateX(-50%);"
+			>
 				{@html icons.logo}
 			</a>
 
-			<div class="hidden xl:flex items-center justify-start gap-10 opacity-60 flex-nowrap text-nowrap">
-				<NavTopics />
+			<div
+				class="hidden xl:flex items-center justify-start gap-10 opacity-60 flex-nowrap text-nowrap"
+			>
+				{#await topics then data}
+					{#each data.data as item}
+						<a
+							class="hover:underline"
+							href="{base}/{item.toLowerCase().replace(/\s+/g, '_')}"
+							target="_self"
+						>
+							{item}
+						</a>
+					{/each}
+				{/await}
 			</div>
 		</div>
 		<!-- Middle -->
@@ -35,18 +55,6 @@
 			<div class="hidden xl:flex items-center justify-end gap-2">
 				<!-- Dark Mode Toggle -->
 				<LightSwitch />
-				<!-- Social -->
-				<nav class="flex items-center">
-					<a
-						class="btn hover:preset-tonal"
-						href="https://github.com/skeletonlabs/skeleton"
-						target="_blank"
-						title="GitHub"
-						aria-label="GitHub"
-					>
-						{@html icons.github}
-					</a>
-				</nav>
 			</div>
 		</div>
 	</div>

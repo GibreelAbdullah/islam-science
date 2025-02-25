@@ -12,7 +12,7 @@
 	<main class=""> <!-- Add padding-bottom to prevent content from being hidden behind the fixed footer -->
 		{@render children()}
 	</main>
-	<footer class="fixed inset-x-0 bottom-0 bg-white shadow-lg">
+	<footer class="fixed inset-x-0 bottom-0 shadow-lg">
 		<Footer />
 	</footer>
 </div>

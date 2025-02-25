@@ -15,7 +15,7 @@ export default {
 	plugins: [
 		typography,
 		skeleton({
-			themes: [themes.cerberus, themes.rose]
+			themes: [themes.rose]
 		})
 	],
 
