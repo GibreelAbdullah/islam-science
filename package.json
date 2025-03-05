@@ -4,6 +4,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
+		"update-prerender": "node update-prerender.cjs",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
@@ -14,7 +15,7 @@
 		"test:e2e": "playwright test",
 		"test": "npm run test:e2e",
 		"format": "prettier --write .",
-		"deploy": "gh-pages -d build -t"
+		"deploy": "npm run update-prerender && npm run build && gh-pages -d build -t"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",

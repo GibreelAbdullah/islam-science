@@ -1,5 +1,6 @@
 const getData = async (url: string) => {
-    const path = 'http://localhost:8000';
+    // const path = 'http://localhost:8000/islam-science';
+    const path = 'https://raw.githubusercontent.com/GibreelAbdullah/islam-science-api/refs/heads/master'
     try {
         const response = await fetch(path + url + ".json");
         if (!response.ok) {
