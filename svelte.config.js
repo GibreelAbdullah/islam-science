@@ -18,9 +18,10 @@ const config = {
 		prerender: {
     entries: [
       '/',
+      '/FRONTPAGE',
       '/about',
       '/contact_us',
-      '/fundamentals/basics_of_islam_-_study_resources',
+      '/fundamentals/basics_of_islam_study_resources',
       '/fundamentals/can_technology_fix_its_own_negative_effects',
       '/fundamentals/limitations_of_science',
       '/fundamentals/negative_impacts_of_technology',
@@ -35,7 +36,8 @@ const config = {
       '/fundamentals/why_islam_is_true',
       '/fundamentals',
       '/main_topics/fiqh_&_ai',
-      '/main_topics/height_of_prophet_adam_–_science_&_hadith',
+      '/main_topics/height_of_prophet_adam_-_science_&_hadith',
+      '/main_topics/islam_&_ai_-_consciousness',
       '/main_topics/islam_&_bioethics',
       '/main_topics/islam_&_ethical_use_of_technology',
       '/main_topics/islam_&_evolution',
@@ -65,9 +67,9 @@ const config = {
       '/personalities',
       '/resources/articles',
       '/resources/books',
+      '/resources/courses',
       '/resources/societies_&_research_groups',
-      '/resources/videos',
-      '/resources'
+      '/resources/videos'
     ]
   },
 	}

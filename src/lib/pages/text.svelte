@@ -5,13 +5,6 @@
     {@html data.data}
 </div>
 
-<!-- <style>
-:global(a) {
-  color: #3b82f6 !important;
-  text-decoration: underline;
-}
+<style>
 
-:global(a):hover {
-  color: #1d4ed8 !important;
-}
-</style> -->
+</style>

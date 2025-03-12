@@ -9,9 +9,6 @@
 
 
 <div class="grid grid-cols-1 gap-6 max-w-[90rem] place-items-center px-4 pb-28 mx-auto">
-	{console.log(base)}
-	{console.log(path)}
-	<!-- {console.log(path.replace('islam-science', ''))} -->
 	{#each data.data as item}
 		<a href="{path.replace(/\/$/, '')}/{item.toLowerCase().replace(/\s+/g, '_')}" class="block w-full h-full">
 			<div

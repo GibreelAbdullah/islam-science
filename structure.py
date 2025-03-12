@@ -65,8 +65,8 @@ def print_directory_structure(structure, output_file, path=""):
         
         if isinstance(content, dict) and "type" in content and content["type"] == "file":
             # This is a file
-            if current_path.endswith(".json"):
-                current_path = current_path.replace("islam-science", "").replace(".json", "")
+            if current_path.endswith(".html"):
+                current_path = current_path.replace("islam-science", "").replace(".html", "")
                 output_file.write(current_path + "\n")
         else:
             # This is a directory

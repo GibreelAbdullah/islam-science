@@ -5,11 +5,11 @@
 	let { children } = $props();
 </script>
 
-<div class="h-screen">
+<div class="min-h-screen bg-gradient-to-br from-surface-50 to-surface-200 dark:from-surface-950 dark:to-surface-900">
 	<!-- Header -->
-	<header class=" p-4"><Header /></header>
+	<header class="p-4"><Header /></header>
 	<!-- Main -->
-	<main class=""> <!-- Add padding-bottom to prevent content from being hidden behind the fixed footer -->
+	<main class="">
 		{@render children()}
 	</main>
 	<footer class="fixed inset-x-0 bottom-0 shadow-lg">

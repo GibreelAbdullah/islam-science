@@ -10,7 +10,7 @@
 </script>
 
 <header
-	class="sticky top-0 z-50 border-b-[1px] border-surface-500/20 bg-surface-50/90 dark:bg-surface-950/90 backdrop-blur w-full h-[70px] flex items-center"
+	class="sticky top-0 z-50 border-b-[1px] border-surface-500/20 backdrop-blur w-full h-[70px] flex items-center"
 >
 	<div
 		class="container mx-auto xl:grid max-w-screen-2xl xl:grid-cols-[1fr_auto_1fr] items-center gap-4 px-4 xl:px-10"
@@ -36,15 +36,7 @@
 				class="hidden xl:flex items-center justify-start gap-10 opacity-60 flex-nowrap text-nowrap"
 			>
 				{#await topics then data}
-					{#each data.data as item}
-						<a
-							class="hover:underline"
-							href="{base}/{item.toLowerCase().replace(/\s+/g, '_')}"
-							target="_self"
-						>
-							{item}
-						</a>
-					{/each}
+					{@html data}
 				{/await}
 			</div>
 		</div>

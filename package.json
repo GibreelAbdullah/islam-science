@@ -17,6 +17,9 @@
 		"format": "prettier --write .",
 		"deploy": "npm run update-prerender && npm run build && gh-pages -d build -t"
 	},
+	"dependencies": {
+		"json5": "^2.2.3"
+	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",
 		"@eslint/js": "^9.18.0",
