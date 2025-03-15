@@ -9,6 +9,7 @@
 	let title = $state<string>('');
 
 	$effect(() => {
+		dataStore = new Promise(() => {});
 		path = $page.url?.pathname || '';
 		if (path !== undefined) {
 			console.log(path);
@@ -34,16 +35,13 @@
 <svelte:head>
 	<title>{title}</title>
 </svelte:head>
-
-<div class="h2 text-center pb-8">{title}</div>
-
 {#await dataStore}
-	<Loader />
+	<div class="flex justify-center items-center"><Loader /></div>
 {:then data}
-	<div class="gap-6 max-w-[90rem] px-4 pb-28 mx-auto text-lg">
+	<div class="gap-6 max-w-[90rem] pt-4 px-8 pb-28 mx-auto text-lg">
 		{@html data}
 	</div>
-{/await}	
+{/await}
 
 <style>		
 	@media (min-width: 640px) {

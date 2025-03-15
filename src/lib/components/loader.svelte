@@ -9,9 +9,8 @@
   <style>
    
   .loader {
-    height: 20rem;
-    width: 20rem;
-    background-color: #212121;
+    height: 4rem;
+    width: 4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,11 +18,11 @@
   
   .react-star {
     position: relative;
-    width: 15rem;
+    width: 0.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15rem;
+    height: 0.6rem;
     animation: rotate 3s infinite;
   }
   
@@ -32,18 +31,18 @@
   
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background: linear-gradient(#0738e8, cyan);
-    height: 2rem;
-    width: 2rem;
+    background: linear-gradient(#0738e8, rgb(255, 60, 0));
+    height: 1rem;
+    width: 1rem;
     animation: rotate 1s linear infinite;
   }
   
   .electron {
     position: absolute;
-    width: 15rem;
+    width: 3rem;
     height: 6rem;
     border-radius: 50%;
-    border: 0.3rem solid #00ffff;
+    border: 0.3rem solid #4c00ff;
     animation: revolve 1s linear infinite;
   }
   
@@ -57,7 +56,7 @@
     transform: translate(-50%, -50%);
     width: 1rem;
     height: 1rem;
-    background-color: cyan;
+    background-color: #9b7bd8;
     border-radius: 50%;
     animation: moveElectron 1s infinite;
   }
@@ -84,23 +83,23 @@
   
   @keyframes revolve {
     0% {
-      border-color: #00ffff9c;
+      border-color: #d87b7b;
       border-right: transparent;
     }
     25% {
-      border-color: #00ffff9c;
+      border-color: #d87b7b;
       border-bottom-color: transparent;
     }
     50% {
-      border-color: #00ffff9c;
+      border-color: #d87b7b;
       border-left-color: transparent;
     }
     75% {
-      border-color: #00ffff9c;
+      border-color: #d87b7b;
       border-top-color: transparent;
     }
     100% {
-      border-color: #00ffff9c;
+      border-color: #d87b7b;
       border-right-color: transparent;
     }
   }
