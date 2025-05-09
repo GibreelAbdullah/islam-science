@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { icons } from '$lib/data/icons';
-	import topics from '$lib/service/utils';
+	import getData from '$lib/service/utils';
 	import { Modal } from '@skeletonlabs/skeleton-svelte';
 	import LightSwitch from './lightSwitch.svelte';
 	import { base } from '$app/paths';
-	import { TITLE } from '$lib/data/constants';
+	import { ROOT_PATH } from '$lib/data/constants';
 	let drawerState = $state(false);
+	let topics: Promise<any> = getData(ROOT_PATH);
 
 	function drawerClose() {
 		drawerState = false;
@@ -43,9 +44,11 @@
 		</div>
 
 		<nav class="flex flex-col gap-2">
-			{#each topics as item}
-				<a class="hover:underline" href="{base}/{item.url}" target="_self"> {item.header} </a>
-			{/each}
+			{#await topics then data}
+				<button class="flex flex-col gap-4 text-left" onclick={drawerClose}>
+					{@html data}
+				</button>
+			{/await}
 		</nav>
 	{/snippet}
 </Modal>
