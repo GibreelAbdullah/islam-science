@@ -12,7 +12,7 @@
 	<main class="">
 		{@render children()}
 	</main>
-	<footer class="fixed inset-x-0 bottom-0 shadow-lg">
+	<footer class="inset-x-0 bottom-0 shadow-lg">
 		<Footer />
 	</footer>
 </div>

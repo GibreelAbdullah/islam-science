@@ -36,9 +36,9 @@
 	<title>{title}</title>
 </svelte:head>
 {#await dataStore}
-	<div class="flex justify-center items-center"><Loader /></div>
+	<div class="flex justify-center items-center min-h-[81vh]"><Loader /></div>
 {:then data}
-	<div class="gap-6 max-w-[90rem] pt-4 px-8 pb-28 mx-auto text-lg">
+	<div class="gap-6 max-w-[90rem] pt-4 px-8 pb-8 mx-auto text-lg min-h-[81vh] leading-9">
 		{@html data}
 	</div>
 {/await}
