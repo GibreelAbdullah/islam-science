@@ -15,7 +15,7 @@
 		"test:e2e": "playwright test",
 		"test": "npm run test:e2e",
 		"format": "prettier --write .",
-		"deploy": "npm run update-prerender && npm run build && gh-pages -d build -t"
+		"deploy": "npm run update-prerender && npm run build && gh-pages -d build -t --cname islam-science.com"
 	},
 	"dependencies": {
 		"json5": "^2.2.3"

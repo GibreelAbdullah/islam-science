@@ -43,7 +43,7 @@ function updateSvelteConfig() {
     // Format the entries for prerender with proper escaping
     const prerenderEntries = endpoints.map(endpoint => {
       // Ensure endpoint starts with a slash
-      const formattedEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+      const formattedEndpoint = '/islam-science' + (endpoint.startsWith('/') ? endpoint : `/${endpoint}`);
       // Escape any special characters
       const escapedEndpoint = escapeJSString(formattedEndpoint);
       return `'${escapedEndpoint}'`;

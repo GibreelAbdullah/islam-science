@@ -16,6 +16,7 @@
 /fundamentals/the_kalam_tradition
 /fundamentals/why_islam_is_true
 /fundamentals
+/images/addingimages
 /main_topics/fiqh_&_ai
 /main_topics/height_of_prophet_adam_-_science_&_hadith
 /main_topics/islam_&_ai_-_consciousness
@@ -27,6 +28,7 @@
 /main_topics/kalam_atomism_&_quantum_mechanics
 /main_topics/quran_&_scientific_miracles
 /main_topics
+/new_additions
 /personalities/dr._aasim_padela
 /personalities/dr._basil_altaie
 /personalities/dr._david_solomon_jalajel
@@ -44,6 +46,7 @@
 /personalities/shaykh_faraz_a._khan
 /personalities/shaykh_hamza_karamali
 /personalities/shaykh_musa_furber
+/personalities/shaykh_nuh_keller
 /personalities/usthad_arnold_yasin_mol
 /personalities
 /resources/articles
@@ -51,3 +54,4 @@
 /resources/courses
 /resources/societies_&_research_groups
 /resources/videos
+/resources
