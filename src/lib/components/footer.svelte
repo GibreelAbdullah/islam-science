@@ -7,7 +7,7 @@
 		<div class="flex items-center gap-4">
 			<!-- <Icon name="skeleton" size={20} /> -->
 			<p class="type-scale-1 opacity-100">
-				Built by <a class="underline" href="https://www.linkedin.com/in/gibreel-abdullah/" target="_blank"
+				Built By <a class="underline" href="https://www.linkedin.com/in/gibreel-abdullah/" target="_blank"
 					>Gibreel Abdullah</a
 				>
 			</p>
