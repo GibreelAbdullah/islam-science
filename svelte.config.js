@@ -13,7 +13,8 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter(),
 		paths: {
-			base: process.env.NODE_ENV === "production" ? "/islam-science" : "",
+			// base: process.env.NODE_ENV === "production" ? "/islam-science" : "",
+      base: '', // ✅ previously: '/islam-science'
 		},
 		prerender: {
     entries: [
