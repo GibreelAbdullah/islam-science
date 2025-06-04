@@ -3,7 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ master ]
-
+  repository_dispatch:  # Add this trigger
+    types: [islam-science-api-updated]
+    
 jobs:
   deploy:
     runs-on: ubuntu-latest
