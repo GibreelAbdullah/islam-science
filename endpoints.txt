@@ -1,7 +1,7 @@
 /
-/FRONTPAGE
 /about
 /contact_us
+/FRONTPAGE
 /fundamentals/basics_of_islam_study_resources
 /fundamentals/can_technology_fix_its_own_negative_effects
 /fundamentals/limitations_of_science
