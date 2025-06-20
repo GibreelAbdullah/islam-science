@@ -10,7 +10,7 @@
 </script>
 
 <header
-	class="sticky top-0 z-50 border-b-[1px] border-surface-500/20 backdrop-blur w-full h-[70px] flex items-center"
+	class="sticky top-0 z-50 border-b-[1px] border-surface-500/20  w-full h-[70px] flex items-center"
 >
 	<div
 		class="container mx-auto xl:grid max-w-screen-2xl xl:grid-cols-[1fr_auto_1fr] items-center gap-4 px-4 xl:px-10"

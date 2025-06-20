@@ -12,7 +12,6 @@
 		dataStore = new Promise(() => {});
 		path = $page.url?.pathname || '';
 		if (path !== undefined) {
-			console.log(path);
 			if (path === '/' || path === '/islam-science') {
 				getData(ROOT_PATH + 'FRONTPAGE.html').then((data) => {
 					dataStore = data;
