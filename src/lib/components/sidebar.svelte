@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { icons } from '$lib/data/icons';
-	import getData from '$lib/service/utils';
 	import { Modal } from '@skeletonlabs/skeleton-svelte';
 	import LightSwitch from './lightSwitch.svelte';
 	import { base } from '$app/paths';
-	import { ROOT_PATH } from '$lib/data/constants';
+
+	const { hierarchy } = $props<{ hierarchy: Promise<any> }>();
+
 	let drawerState = $state(false);
-	let topics: Promise<any> = getData(ROOT_PATH);
 
 	function drawerClose() {
 		drawerState = false;
@@ -26,7 +26,7 @@
 	{#snippet trigger()}{@html icons.menu}{/snippet}
 	{#snippet content()}
 		<header class="flex items-center justify-between">
-			<a class="flex gap-4" href="{base}/" title="Islam-Science" aria-label="Islam-Science">
+			<a onclick={drawerClose} class="flex gap-4" href="{base}/" title="Islam-Science" aria-label="Islam-Science">
 				{@html icons.logo}
 				<!-- <h2 class="h3">{title}</h2> -->
 			</a>
@@ -44,10 +44,16 @@
 		</div>
 
 		<nav class="flex flex-col gap-2">
-			{#await topics then data}
-				<button class="flex flex-col gap-4 text-left" onclick={drawerClose}>
-					{@html data}
-				</button>
+			{#await hierarchy then data}
+				{#each Object.entries(JSON.parse(data) as Record<string, { url: string; children: { key: string; url: string }[] }>) as [name, { url, children }]}
+					<a
+						onclick={drawerClose}
+						href={url}
+						class="flex items-center gap-1 px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:text-black hover:bg-primary-50 dark:hover:text-white dark:hover:bg-primary-700 transition-colors duration-150"
+					>
+						{name}
+					</a>
+				{/each}
 			{/await}
 		</nav>
 	{/snippet}

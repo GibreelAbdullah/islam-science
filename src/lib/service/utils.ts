@@ -1,8 +1,8 @@
-const                                           getData = async (url: string) => {
+const getData = async (url: string) => {
     // const path = 'http://localhost:8000/';
     const path = 'https://raw.githubusercontent.com/GibreelAbdullah/islam-science-api/refs/heads/master'
     try {
-        const response = await fetch(path + url + ".html");
+        const response = await fetch(path + url);
         const data = await response.text();
         return data;
     } catch (error) {
