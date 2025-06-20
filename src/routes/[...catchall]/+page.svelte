@@ -18,7 +18,7 @@
 					dataStore = data;
 				});
 			} else {
-				getData(path + "/.html").then((data) => {
+				getData(path + ".html").then((data) => {
 					dataStore = data;
 				});
 			}
