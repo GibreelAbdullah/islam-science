@@ -32,7 +32,7 @@
 				{@html icons.logo}
 			</a>
 
-			<div class="hidden xl:flex items-center justify-start gap-10 flex-nowrap text-nowrap">
+			<div class="hidden xl:flex items-center justify-start flex-nowrap text-nowrap">
 				{#await hierarchy then data}
 					{#each Object.entries(JSON.parse(data) as Record<string, { url: string; children: { key: string; url: string }[] }>) as [name, { url, children }]}
 						<div class="relative inline-block m-2 group">
