@@ -6,6 +6,12 @@
 </script>
 
 <svelte:head>
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<meta name="apple-mobile-web-app-title" content="islam-science" />
+	<link rel="manifest" href="/site.webmanifest" />
+
 	<title>Islam & Science | Current Developments, Research and Publications in the Domain of Islam, Science and Technology</title>
 	<meta name="description" content="Current Developments, Research and Publications in the Domain of Islam, Science and Technology">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
