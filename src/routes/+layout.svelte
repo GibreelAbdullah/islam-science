@@ -12,19 +12,19 @@
 	<meta name="apple-mobile-web-app-title" content="islam-science" />
 	<link rel="manifest" href="/site.webmanifest" />
 
-	<title>Islam & Science | Current Developments, Research and Publications in the Domain of Islam, Science and Technology</title>
+	<title>Islam, Science & Technology | Current Developments, Research and Publications in the Domain of Islam, Science and Technology</title>
 	<meta name="description" content="Current Developments, Research and Publications in the Domain of Islam, Science and Technology">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="keywords" content="Islam, Science, Islamic Science, Quran and Science, Muslim Scientists, Islam Knowledge, Kalam, Ilm">
 	<meta name="author" content="Dr. Muhammed Hisham and Gibreel Abdullah">
 	<link rel="canonical" href="https://islam-science.com" />
-	<meta property="og:title" content="Islam & Science" />
+	<meta property="og:title" content="Islam, Science & Technology" />
 	<meta property="og:description" content="Current Developments, Research and Publications in the Domain of Islam, Science and Technology." />
 	<!-- <meta property="og:image" content="https://islam-science.com/social-card.jpg" /> -->
 	<meta property="og:url" content="https://islam-science.com" />
 	<meta property="og:type" content="website" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Islam & Science" />
+	<meta name="twitter:title" content="Islam, Science & Technology" />
 	<meta name="twitter:description" content="Current Developments, Research and Publications in the Domain of Islam, Science and Technology." />
 	<!-- <meta name="twitter:image" content="https://islam-science.com/social-card.jpg" /> -->
 </svelte:head>
